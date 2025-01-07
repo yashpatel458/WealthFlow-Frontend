@@ -1,0 +1,164 @@
+{
+  "dashboard": {
+    "aumTotal": 2400000,
+    "totalAssets": 1700000,
+    "totalRevenue": 950000,
+    "expenses": 300000,
+    "totalClients": 5,
+    "averageROI": 15.4,
+    "revenueTrends": [40000, 120000, 150000, 200000, 250000, 300000, 400000],
+    "investmentData": [
+      { "sector": "Technology", "amount": 600000 },
+      { "sector": "Healthcare", "amount": 300000 },
+      { "sector": "Finance", "amount": 400000 },
+      { "sector": "Energy", "amount": 200000 },
+      { "sector": "Real Estate", "amount": 350000 },
+      { "sector": "Commodities", "amount": 250000 },
+      { "sector": "Healthcare", "amount": 450000 },
+      { "sector": "Education", "amount": 150000 },
+      { "sector": "Manufacturing", "amount": 220000 },
+      { "sector": "Telecommunications", "amount": 330000 }
+    ]
+  },
+  "clients": [
+    { "name": "John Doe", "investment": 450000, "roi": 18.5, "leadStatus": "Active" },
+    { "name": "Jane Smith", "investment": 250000, "roi": 12.0, "leadStatus": "Inactive" },
+    { "name": "Mike Johnson", "investment": 350000, "roi": 22.0, "leadStatus": "Active" },
+    { "name": "Emily Davis", "investment": 200000, "roi": 8.5, "leadStatus": "Inactive" },
+    { "name": "David Wilson", "investment": 400000, "roi": 16.0, "leadStatus": "Active" },
+    { "name": "Jessica Taylor", "investment": 500000, "roi": 19.0, "leadStatus": "Active" },
+    { "name": "Chris Brown", "investment": 550000, "roi": 14.0, "leadStatus": "Inactive" },
+    { "name": "Rachel Green", "investment": 250000, "roi": 13.5, "leadStatus": "Active" },
+    { "name": "Oliver Harris", "investment": 800000, "roi": 21.5, "leadStatus": "Inactive" },
+    { "name": "Sophie Lewis", "investment": 600000, "roi": 16.5, "leadStatus": "Active" },
+    { "name": "Charlotte Walker", "investment": 450000, "roi": 15.0, "leadStatus": "Active" },
+    { "name": "Daniel Allen", "investment": 700000, "roi": 17.0, "leadStatus": "Inactive" },
+    { "name": "Matthew Young", "investment": 300000, "roi": 18.0, "leadStatus": "Active" },
+    { "name": "Sarah King", "investment": 200000, "roi": 9.0, "leadStatus": "Inactive" },
+    { "name": "William Scott", "investment": 100000, "roi": 10.0, "leadStatus": "Active" },
+    { "name": "Olivia Adams", "investment": 400000, "roi": 20.0, "leadStatus": "Inactive" },
+    { "name": "Lucas Nelson", "investment": 300000, "roi": 14.0, "leadStatus": "Active" },
+    { "name": "Mia Carter", "investment": 750000, "roi": 18.5, "leadStatus": "Active" },
+    { "name": "Ethan Perez", "investment": 500000, "roi": 16.0, "leadStatus": "Inactive" },
+    { "name": "Lily Moore", "investment": 350000, "roi": 13.5, "leadStatus": "Active" }
+  ],
+  "analytics": {
+    "clientData": [
+      { "Name": "John Doe", "Investment ($)": "$450,000", "ROI (%)": "18.5%", "Status": "Active" },
+      { "Name": "Jane Smith", "Investment ($)": "$250,000", "ROI (%)": "12.0%", "Status": "Inactive" },
+      { "Name": "Mike Johnson", "Investment ($)": "$350,000", "ROI (%)": "22.0%", "Status": "Active" },
+      { "Name": "Emily Davis", "Investment ($)": "$200,000", "ROI (%)": "8.5%", "Status": "Inactive" },
+      { "Name": "David Wilson", "Investment ($)": "$400,000", "ROI (%)": "16.0%", "Status": "Active" },
+      { "Name": "Jessica Taylor", "Investment ($)": "$500,000", "ROI (%)": "19.0%", "Status": "Active" },
+      { "Name": "Chris Brown", "Investment ($)": "$550,000", "ROI (%)": "14.0%", "Status": "Inactive" },
+      { "Name": "Rachel Green", "Investment ($)": "$250,000", "ROI (%)": "13.5%", "Status": "Active" },
+      { "Name": "Oliver Harris", "Investment ($)": "$800,000", "ROI (%)": "21.5%", "Status": "Inactive" },
+      { "Name": "Sophie Lewis", "Investment ($)": "$600,000", "ROI (%)": "16.5%", "Status": "Active" },
+      { "Name": "Charlotte Walker", "Investment ($)": "$450,000", "ROI (%)": "15.0%", "Status": "Active" },
+      { "Name": "Daniel Allen", "Investment ($)": "$700,000", "ROI (%)": "17.0%", "Status": "Inactive" },
+      { "Name": "Matthew Young", "Investment ($)": "$300,000", "ROI (%)": "18.0%", "Status": "Active" },
+      { "Name": "Sarah King", "Investment ($)": "$200,000", "ROI (%)": "9.0%", "Status": "Inactive" },
+      { "Name": "William Scott", "Investment ($)": "$100,000", "ROI (%)": "10.0%", "Status": "Active" },
+      { "Name": "Olivia Adams", "Investment ($)": "$400,000", "ROI (%)": "20.0%", "Status": "Inactive" },
+      { "Name": "Lucas Nelson", "Investment ($)": "$300,000", "ROI (%)": "14.0%", "Status": "Active" },
+      { "Name": "Mia Carter", "Investment ($)": "$750,000", "ROI (%)": "18.5%", "Status": "Active" },
+      { "Name": "Ethan Perez", "Investment ($)": "$500,000", "ROI (%)": "16.0%", "Status": "Inactive" },
+      { "Name": "Lily Moore", "Investment ($)": "$350,000", "ROI (%)": "13.5%", "Status": "Active" }
+    ],
+    "investmentData": [
+      { "Sector": "Technology", "Amount ($)": "$600,000" },
+      { "Sector": "Healthcare", "Amount ($)": "$300,000" },
+      { "Sector": "Finance", "Amount ($)": "$400,000" },
+      { "Sector": "Energy", "Amount ($)": "$200,000" },
+      { "Sector": "Real Estate", "Amount ($)": "$350,000" },
+      { "Sector": "Commodities", "Amount ($)": "$250,000" },
+      { "Sector": "Healthcare", "Amount ($)": "$450,000" },
+      { "Sector": "Education", "Amount ($)": "$150,000" },
+      { "Sector": "Manufacturing", "Amount ($)": "$220,000" },
+      { "Sector": "Telecommunications", "Amount ($)": "$330,000" }
+    ]
+  },
+"products": [
+    {
+      "id": 1,
+      "name": "Vanguard Total Stock Market ETF",
+      "type": "ETF",
+      "riskLevel": "Moderate",
+      "currentPrice": 250,
+      "description": "An ETF that seeks to track the performance of the CRSP US Total Market Index, covering all sectors of the economy."
+    },
+    {
+      "id": 2,
+      "name": "iShares 20+ Year Treasury Bond ETF",
+      "type": "Bond",
+      "riskLevel": "Low",
+      "yield": 1.8,
+      "description": "This fund seeks to track the investment results of an index composed of U.S. Treasury bonds with maturities greater than 20 years."
+    },
+    {
+      "id": 3,
+      "name": "SPDR S&P 500 ETF Trust",
+      "type": "ETF",
+      "riskLevel": "Moderate",
+      "currentPrice": 420,
+      "description": "An ETF that seeks to provide investment results that correspond to the price and yield performance of the S&P 500 Index."
+    },
+    {
+      "id": 4,
+      "name": "Fidelity ZERO Large Cap Index Fund",
+      "type": "Mutual Fund",
+      "riskLevel": "Moderate",
+      "currentPrice": 12,
+      "description": "This mutual fund seeks to provide broad exposure to the U.S. large-cap stocks and strives to match the performance of the large-cap index."
+    },
+    {
+      "id": 5,
+      "name": "iShares Core U.S. Aggregate Bond ETF",
+      "type": "Bond",
+      "riskLevel": "Low",
+      "yield": 2.3,
+      "description": "This ETF aims to track the performance of the Bloomberg Barclays U.S. Aggregate Bond Index, which includes U.S. investment-grade bonds."
+    },
+    {
+      "id": 6,
+      "name": "Schwab U.S. Dividend Equity ETF",
+      "type": "ETF",
+      "riskLevel": "Moderate",
+      "currentPrice": 70,
+      "description": "An ETF that tracks the performance of high dividend-paying U.S. stocks, with an emphasis on long-term growth and capital preservation."
+    },
+    {
+      "id": 7,
+      "name": "JPMorgan High Yield Bond Fund",
+      "type": "Mutual Fund",
+      "riskLevel": "High",
+      "currentPrice": 45,
+      "description": "This fund invests in high-yield corporate bonds, which tend to offer higher returns but come with greater risk."
+    },
+    {
+      "id": 8,
+      "name": "Energy Select Sector SPDR Fund",
+      "type": "ETF",
+      "riskLevel": "High",
+      "currentPrice": 87,
+      "description": "An ETF designed to track the performance of the energy sector of the S&P 500 Index, with exposure to energy companies."
+    },
+    {
+      "id": 9,
+      "name": "Vanguard Emerging Markets Stock Index Fund",
+      "type": "Mutual Fund",
+      "riskLevel": "High",
+      "currentPrice": 60,
+      "description": "This mutual fund seeks to track the performance of the FTSE Emerging Markets All Cap China A Inclusion Index, focusing on emerging market economies."
+    },
+    {
+      "id": 10,
+      "name": "PIMCO Total Return Fund",
+      "type": "Bond",
+      "riskLevel": "Low",
+      "yield": 2.4,
+      "description": "This bond fund seeks to provide maximum total return, consistent with prudent risk, by investing in a broad range of fixed-income securities."
+    }
+],
+  "currencies": ["CAD","USD", "EUR", "INR", "JPY"]
+}
