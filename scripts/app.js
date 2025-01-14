@@ -319,3 +319,26 @@ document.addEventListener("DOMContentLoaded", function() {
     const currencies = ["USD", "EUR", "INR", "JPY", "CAD"];
     setupCurrencyConverter(currencies);
 });
+
+
+// app.js
+
+document.addEventListener("DOMContentLoaded", () => {
+    const signOutButton = document.getElementById("signOutButton");
+
+    // Redirect to login.html if not logged in
+    if (!sessionStorage.getItem("loggedIn") && !window.location.href.includes("login.html")) {
+        window.location.href = "login.html";
+        return; // Prevent further execution
+    }
+
+    // Handle sign-out button
+    if (signOutButton) {
+        signOutButton.addEventListener("click", () => {
+            sessionStorage.removeItem("loggedIn");
+            window.location.href = "login.html";
+        });
+    }
+});
+
+
