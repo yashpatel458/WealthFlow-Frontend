@@ -241,7 +241,6 @@ function setupCurrencyConverter(currencies) {
     const convertBtn = document.getElementById("convert-currency");
     const result = document.getElementById("conversion-result");
 
-    // Predefined dummy exchange rates (for simulation)
     const exchangeRates = {
         "USD": {
             "EUR": 0.85,

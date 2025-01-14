@@ -3,3 +3,26 @@
 #asset-pie-chart {
     width: 30%;
 }
+.sidebar {
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar .nav-link {
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    background-color: #495057;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+    .sidebar.open {
+        transform: translateX(0);
+    }
+}
