@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const newsApiUrl = 'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=5bc90c8da5634b93ab403a933353e2ff'; // Replace with the actual API URL
+    const newsApiUrl = 'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=5bc90c8da5634b93ab403a933353e2ff'; 
     const newsContainer = document.getElementById('news-container');
     const errorMessage = document.getElementById('error-message');
 

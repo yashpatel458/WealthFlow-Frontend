@@ -4,50 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>WealthFlow About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script defer src="scripts/app.js"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="scripts/sidebar.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!-- Sidebar -->
-        <div class="row vh-100">
-            <nav class="col-md-3 col-lg-2 bg-dark text-white sidebar p-3">
-                <h2 class="text-center">WealthFlow</h2>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a href="/index.html" class="nav-link text-white">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/analytics.html" class="nav-link text-white">Analytics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/products.html" class="nav-link text-white">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/currency.html" class="nav-link text-white">Currency Converter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/news.html" class="nav-link text-white">Trending News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/about.html" class="nav-link text-white active">About Us</a>
-                    </li>
-                </ul>
-            </nav>
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
 
-            <!-- Main Content -->
-            <main class="col-md-9 col-lg-10 p-4">
-                <header>
-                    <h1>About Us</h1>
-                </header>
-                <section class="card shadow-sm p-4 mb-4">
-                    <p class="h5">Welcome to WealthWise - the platform designed to empower your financial decisions with intelligent tools and insightful data. We are dedicated to providing you with the tools you need to track, analyze, and optimize your investments.</p>
-                </section>
-            </main>
-        </div>
-    </div>
+    <!-- Main Content -->
+    <main class="main-content">
+        <header>
+            <h1 class="mb-5 header">Why WealthFlow was made?</h1>
+        </header>
+        <section class="card shadow-sm p-4 mb-4 m-5">
+            <h2 class="mb-4">Purpose</h2>
+            <p>
+                Welcome to WealthWise - the platform designed to empower your financial decisions with intelligent tools and insightful data. 
+                WealthWise is a front-end web application created to help users visualize and manage their personal finances in one place—tracking assets, monitoring investment performance, exploring new products, and converting currencies. 
+                Built using dummy JSON data and API integrations, it demonstrates how a typical wealth management dashboard functions without requiring a back-end server.
+            </p>
+
+            <h2 class="mb-4 mt-4">Target Audience and Use Cases</h2>
+            <p><strong>1. Investment Advisors:</strong> Use WealthWise to view AUM, manage client portfolios, and recommend investment products.</p>
+            <p><strong>2. Portfolio Managers:</strong> Track multiple portfolios, review ROI, and compare different asset allocations.</p>
+
+            <h2 class="mb-4 mt-4">Sidebar Menu Features</h2>
+            <ul>
+                <li><strong>Dashboard:</strong> Provides a summary of total assets, revenue, client count, and investment trends. It serves as an overview of key financial metrics.</li>
+                <li><strong>Analytics:</strong> Allows users to dive deeper into investment data, generate insights, and track performance metrics through charts and reports.</li>
+                <li><strong>Products:</strong> Displays a catalog of financial products like mutual funds, bonds, and ETFs, with options to filter and explore details.</li>
+                <li><strong>Currency Converter:</strong> A tool to convert between different currencies using real-time exchange rates, helping users plan international investments.</li>
+                <li><strong>Trending News:</strong> Fetches and displays the latest financial news and trends to keep users informed about market developments.</li>
+                <li><strong>About Us:</strong> Provides information about the platform's purpose, target audience, and features, helping users understand the application's vision and goals.</li>
+            </ul>
+
+            <h2 class="mb-4 mt-4">High-Level Plan</h2>
+            <p>
+                WealthWise is a small-scale front-end web application that mimics the features of professional wealth management platforms. 
+                By using dummy JSON data and a news API, the platform showcases how financial data can be visualized and explored through intuitive interfaces.
+            </p>
+            <p><strong>In Real-Life Platforms:</strong> Similar tools are widely used by investment professionals and advisors to manage portfolios, track performance, and analyze financial trends in real-time.</p>
+        </section>
+
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
