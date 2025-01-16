@@ -13,16 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     populateDashboard(data.dashboard);
                     renderCharts(data.dashboard);
                     break;
-                case path.includes("/WealthFlow-Frontend/analytics.html"):
+                case path == "/WealthFlow-Frontend/analytics.html":
                     populateAnalytics(data.analytics);
                     break;
-                case path.includes("/WealthFlow-Frontend/products.html"):
+                case path == "/WealthFlow-Frontend/products.html":
                     setupProductsPage(data.products);
                     break;
-                case path.includes("/WealthFlow-Frontend/currency.html"):
+                case path == "/WealthFlow-Frontend/currency.html":
                     setupCurrencyConverter(data.currencies);
                     break;
-                case path.includes("/WealthFlow-Frontend/about.html"):
+                case path == "/WealthFlow-Frontend/about.html":
                     break;
             }
         })
