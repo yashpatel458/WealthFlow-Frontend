@@ -332,7 +332,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Redirect to login.html if not logged in
     if (!sessionStorage.getItem("loggedIn") && !window.location.href.includes("login.html")) {
-        window.location.href = "login.html";
+        window.location.href = "/WealthFlow-Frontend/login.html";
         return; // Prevent further execution
     }
 
@@ -340,7 +340,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (signOutButton) {
         signOutButton.addEventListener("click", () => {
             sessionStorage.removeItem("loggedIn");
-            window.location.href = "login.html";
+            window.location.href = "/WealthFlow-Frontend/login.html";
         });
     }
 });
