@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             console.log(data)
             const path = window.location.pathname;
-
+            console.log(path)
             switch (true) {
-                case path.includes("/WealthFlow-Frontend/index.html"):
+                case path.includes("WealthFlow-Frontend/index.html"):
                     populateDashboard(data.dashboard);
                     renderCharts(data.dashboard);
                     break;
