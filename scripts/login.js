@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname.includes("index.html")) {
         const isLoggedIn = sessionStorage.getItem("loggedIn");
         if (!isLoggedIn) {
-            window.location.href = "/login.html";
+            window.location.href = "/WealthFlow-Frontend/login.html";
         }
         return; // Prevent further execution for login form logic
     }
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Handle redirection for login.html
     if (window.location.pathname.includes("login.html")) {
         if (sessionStorage.getItem("loggedIn") === "true") {
-            window.location.href = "/index.html";
+            window.location.href = "/WealthFlow-Frontend/index.html";
             return;
         }
     }
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Example credentials check
             if (username === "admin" && password === "password123") {
                 sessionStorage.setItem("loggedIn", "true");
-                window.location.href = "/index.html";
+                window.location.href = "/WealthFlow-Frontend/index.html";
             } else {
                 error.style.display = "block";
                 error.textContent = "Invalid username or password";
