@@ -139,7 +139,7 @@ p {
 
 /* Full-size background image */
 .bg-image {
-    background-image: url('/assets/login-bg.png'); /* Replace with your image path */
+    background-image: url('/WealthFlow-Frontend/assets/login-bg.png'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents repeating the image */
