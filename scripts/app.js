@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
                            return d;
                           })
         .then(data => {
+            console.log(data)
             const path = window.location.pathname;
 
             switch (true) {
