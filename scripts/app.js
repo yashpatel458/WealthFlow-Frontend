@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     fetch("data/data.json")
         .then(response => { d = response.json()
-                          console.log(d)
                            return d;
                           })
         .then(data => {
             const path = window.location.pathname;
-            console.log(path)
             switch (true) {
                 case path.includes("/"):
                     populateDashboard(data.dashboard);
