@@ -1,30 +1,57 @@
 document.addEventListener("DOMContentLoaded", () => {
     fetch("data/data.json")
-        .then(response => { d = response.json()
-                           return d;
-                          })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
+            console.log("Fetched data:", data); // Debugging to confirm data structure
             const path = window.location.pathname;
+            console.log("Current path:", path); // Debugging to confirm the current path
+
+            // Handle different paths
             switch (true) {
-                case path.includes("/"):
-                    populateDashboard(data.dashboard);
-                    renderCharts(data.dashboard);
+                case path.endsWith("/") || path.endsWith("index.html"):
+                    if (data.dashboard) {
+                        populateDashboard(data.dashboard);
+                        renderCharts(data.dashboard);
+                    } else {
+                        console.error("Dashboard data is missing");
+                    }
                     break;
                 case path.includes("analytics.html"):
-                    populateAnalytics(data.analytics);
+                    if (data.analytics) {
+                        populateAnalytics(data.analytics);
+                    } else {
+                        console.error("Analytics data is missing");
+                    }
                     break;
                 case path.includes("products.html"):
-                    setupProductsPage(data.products);
+                    if (data.products) {
+                        setupProductsPage(data.products);
+                    } else {
+                        console.error("Products data is missing");
+                    }
                     break;
                 case path.includes("currency.html"):
-                    setupCurrencyConverter(data.currencies);
+                    if (data.currencies) {
+                        setupCurrencyConverter(data.currencies);
+                    } else {
+                        console.error("Currencies data is missing");
+                    }
                     break;
                 case path.includes("about.html"):
+                    console.log("No data processing required for About page");
                     break;
+                default:
+                    console.error("No matching path found");
             }
         })
         .catch(error => console.error("Error loading data:", error));
 });
+
 
 // Populate Dashboard Metrics
 function populateDashboard(dashboardData) {
