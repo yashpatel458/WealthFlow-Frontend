@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mainContent = document.querySelector(".main-content");
 
     // Load the sidebar HTML
-    fetch("/components/sidebar.html")
+    fetch("/WealthFlow-Frontend/components/sidebar.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Failed to load sidebar: ${response.statusText}`);
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (signOutButton) {
                 signOutButton.addEventListener("click", () => {
                     sessionStorage.removeItem("loggedIn");
-                    window.location.href = "/login.html";
+                    window.location.href = "/WealthFlow-Frontend/login.html";
                 });
             }
 
