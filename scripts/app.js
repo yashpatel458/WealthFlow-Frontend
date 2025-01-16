@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("data/data.json")
+    fetch("/WealthFlow-Frontend/data/data.json")
         .then(response => response.json())
         .then(data => {
             const path = window.location.pathname;
