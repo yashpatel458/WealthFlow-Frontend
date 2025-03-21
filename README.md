@@ -1,8 +1,8 @@
 # WealthFlow Test Automation Project
 
 Credentials:
-admin
-password123
+- admin
+- password123
 
 
 https://github.com/user-attachments/assets/4bd816f0-8ca8-4d94-9b8b-1d171a0af2c9
